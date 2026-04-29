@@ -1,0 +1,23 @@
+[
+  {
+    "img": "/assets/services-hero/home.jpg",
+    "type": "Interior Design",
+    "advantege": "Philosophy",
+    "title": "Home <br /> Interiors <br /> Excellence",
+    "desc": "Creating beautiful and functional living spaces, <br /> our mission is to shape perfect interiors"
+  },
+  {
+    "img": "/assets/services-hero/corp.jpg",
+    "type": "Corporate",
+    "advantege": "Featured",
+    "title": "Corporate <br /> Office <br /> Interiors",
+    "desc": "Professional workspace design solutions, <br /> our mission is to shape perfect interiors"
+  },
+  {
+    "img": "/assets/services-hero/van.jpg",
+    "type": "Compact",
+    "advantege": "Featured",
+    "title": "Compact <br /> Interior <br /> Design",
+    "desc": "Creating memorable dining experiences, <br /> our mission is to shape perfect interiors"
+  }
+]

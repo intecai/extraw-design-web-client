@@ -1,0 +1,32 @@
+[
+  {
+    "title": "Anna Nagar <br /> Home",
+    "subTitle": "Home Interiors",
+    "desc": "Complete home interior makeover <br /> with modern furniture design",
+    "img": "/assets/projects/home.jpg"
+  },
+  {
+    "title": "Corporate <br /> Office",
+    "subTitle": "Corporate Interiors",
+    "desc": "Modern office space design <br /> with ergonomic workstations",
+    "img": "/assets/projects/corporate.jpg"
+  },
+  {
+    "title": "Fine Dining <br /> Restaurant",
+    "subTitle": "Restaurant Interiors",
+    "desc": "Elegant restaurant interior <br /> with ambient lighting design",
+    "img": "/assets/projects/restaurant.jpg"
+  },
+  {
+    "title": "Villa <br /> Design",
+    "subTitle": "Architecture",
+    "desc": "Luxury villa architectural <br /> design with modern aesthetics",
+    "img": "/assets/projects/villa.jpg"
+  },
+  {
+    "title": "Penthouse <br /> Apartment",
+    "subTitle": "Home Interiors",
+    "desc": "Premium penthouse interior <br /> with smart home features",
+    "img": "/assets/projects/penthouse.jpg"
+  }
+]

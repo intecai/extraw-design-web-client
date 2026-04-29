@@ -1,0 +1,62 @@
+[
+  {
+    "img": "/assets/images/clients/1-1024x1024.png",
+    "title": "Winner Best of Substainable Interior 2023",
+    "subTitle": "Neoclassical Sofa",
+    "delay": ".2s"
+  },
+  {
+    "img": "/assets/images/clients/2-1024x1024.png",
+    "title": "Top 5 Interior Design Inspiration 2023",
+    "subTitle": "ABERY Apartment Master Bedroom",
+    "delay": ".4s"
+  },
+  {
+    "img": "/assets/images/clients/3-1024x1024.png",
+    "title": "Top 10 Agency Use Sustainable Material",
+    "subTitle": "Neoclassical Sofa",
+    "delay": ".6s"
+  },
+  {
+    "img": "/assets/images/clients/4-1024x1024.png",
+    "title": "Winner Best CGI Artirst 2022",
+    "subTitle": "Boston CGI",
+    "delay": ".8s"
+  },
+  {
+    "img": "/assets/images/clients/5-1024x1024.png",
+    "title": "Winner UID of The Year in 2020",
+    "subTitle": "Bristo Restaurant",
+    "delay": ".2s"
+  },
+  {
+    "img": "/assets/images/clients/6-1024x1024.png",
+    "title": "Top 5 Excellent Furniture Store USA 2020",
+    "subTitle": "Wooden Furniture",
+    "delay": ".4s"
+  },
+  {
+    "img": "/assets/images/clients/7-1024x1024.png",
+    "title": "Top 5 Excellent Furniture Store USA 2020",
+    "subTitle": "Wooden Furniture",
+    "delay": ".6s"
+  },
+  {
+    "img": "/assets/images/clients/8-1024x1024.png",
+    "title": "Top 10 Agency Use Sustainable Material",
+    "subTitle": "Wooden Furniture",
+    "delay": ".8s"
+  },
+  {
+    "img": "/assets/images/clients/9-1024x1024.png",
+    "title": "Top 10 Agency Use Sustainable Material",
+    "subTitle": "Wooden Furniture",
+    "delay": ".10s"
+  },
+  {
+    "img": "/assets/images/clients/10-1024x1024.png",
+    "title": "Top 10 Agency Use Sustainable Material",
+    "subTitle": "Wooden Furniture",
+    "delay": ".12s"
+  }
+]
