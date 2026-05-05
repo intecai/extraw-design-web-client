@@ -57,8 +57,7 @@ function ContactForm ()
     try
     {
       const API_URL = process.env.REACT_APP_API_URL;
-      console.log( "API URL:", process.env.REACT_APP_API_URL );
-      console.log( "Form Data:", data );
+
       const response = await axios.post(
         `${ API_URL }/api/contact`,
         data,
@@ -79,7 +78,7 @@ function ContactForm ()
       }
     } catch ( error )
     {
-      console.error( "API Error:", error );
+
       setSubmitStatus( {
         type: 'error',
         message: error.response?.data?.message || 'Network error. Please check your connection and try again.',
