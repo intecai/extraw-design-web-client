@@ -37,9 +37,10 @@ const TIME_SLOTS = [
   '06:00 PM', '06:30 PM', '07:00 PM', '07:30 PM',
 ];
 
-function ContactForm() {
-  const [isSubmitting, setIsSubmitting] = useState(false);
-  const [submitStatus, setSubmitStatus] = useState(null);
+function ContactForm ()
+{
+  const [ isSubmitting, setIsSubmitting ] = useState( false );
+  const [ submitStatus, setSubmitStatus ] = useState( null );
 
   const {
     register,
@@ -48,42 +49,52 @@ function ContactForm() {
     reset,
   } = useForm();
 
-  const onSubmit = async (data) => {
-    setIsSubmitting(true);
-    setSubmitStatus(null);
+  const onSubmit = async ( data ) =>
+  {
+    setIsSubmitting( true );
+    setSubmitStatus( null );
 
-    try {
-      const formData = new FormData();
-      Object.keys(data).forEach((key) => {
-        formData.append(key, data[key]);
-      });
+    try
+    {
+      const API_URL = process.env.REACT_APP_API_URL;
+      console.log( "API URL:", process.env.REACT_APP_API_URL );
+      console.log( "Form Data:", data );
+      const response = await axios.post(
+        `${ API_URL }/api/contact`,
+        data,
+        {
+          headers: {
+            'Content-Type': 'application/json',
+          },
+        }
+      );
 
-      const response = await axios.post('/api/send-mail.php', formData, {
-        headers: {
-          'Content-Type': 'multipart/form-data',
-        },
-      });
-
-      if (response.data.success) {
-        setSubmitStatus({ type: 'success', message: 'Your consultation request has been sent successfully! We will contact you soon.' });
+      if ( response.data.success )
+      {
+        setSubmitStatus( { type: 'success', message: 'Your consultation request has been sent successfully! We will contact you soon.' } );
         reset();
-      } else {
-        setSubmitStatus({ type: 'error', message: response.data.message || 'Failed to send email. Please try again.' });
+      } else
+      {
+        setSubmitStatus( { type: 'error', message: response.data.message || 'Failed to send email. Please try again.' } );
       }
-    } catch (error) {
-      setSubmitStatus({
+    } catch ( error )
+    {
+      console.error( "API Error:", error );
+      setSubmitStatus( {
         type: 'error',
         message: error.response?.data?.message || 'Network error. Please check your connection and try again.',
-      });
-    } finally {
-      setIsSubmitting(false);
+      } );
+    } finally
+    {
+      setIsSubmitting( false );
     }
   };
 
-  const getMinDate = () => {
+  const getMinDate = () =>
+  {
     const tomorrow = new Date();
-    tomorrow.setDate(tomorrow.getDate() + 1);
-    return tomorrow.toISOString().split('T')[0];
+    tomorrow.setDate( tomorrow.getDate() + 1 );
+    return tomorrow.toISOString().split( 'T' )[ 0 ];
   };
 
   return (
@@ -110,7 +121,7 @@ function ContactForm() {
           </div>
           <div className="col-lg-6">
             <form
-              onSubmit={handleSubmit(onSubmit)}
+              onSubmit={ handleSubmit( onSubmit ) }
               className="form mt-5 mt-lg-0 wow fadeInUp slow"
               data-wow-delay="0.4s"
             >
@@ -123,19 +134,19 @@ function ContactForm() {
                     <input
                       type="text"
                       id="fullName"
-                      className={`form-control ${errors.fullName ? 'is-invalid' : ''}`}
+                      className={ `form-control ${ errors.fullName ? 'is-invalid' : '' }` }
                       placeholder="your name"
-                      {...register('fullName', {
+                      { ...register( 'fullName', {
                         required: 'Full name is required',
                         minLength: {
                           value: 2,
                           message: 'Name must be at least 2 characters',
                         },
-                      })}
+                      } ) }
                     />
-                    {errors.fullName && (
-                      <div className="invalid-feedback">{errors.fullName.message}</div>
-                    )}
+                    { errors.fullName && (
+                      <div className="invalid-feedback">{ errors.fullName.message }</div>
+                    ) }
                   </div>
                 </div>
                 <div className="col-lg-6">
@@ -146,19 +157,19 @@ function ContactForm() {
                     <input
                       type="email"
                       id="email"
-                      className={`form-control ${errors.email ? 'is-invalid' : ''}`}
+                      className={ `form-control ${ errors.email ? 'is-invalid' : '' }` }
                       placeholder="Your email address"
-                      {...register('email', {
+                      { ...register( 'email', {
                         required: 'Email is required',
                         pattern: {
                           value: /^[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,}$/i,
                           message: 'Invalid email address',
                         },
-                      })}
+                      } ) }
                     />
-                    {errors.email && (
-                      <div className="invalid-feedback">{errors.email.message}</div>
-                    )}
+                    { errors.email && (
+                      <div className="invalid-feedback">{ errors.email.message }</div>
+                    ) }
                   </div>
                 </div>
                 <div className="col-lg-6">
@@ -171,7 +182,7 @@ function ContactForm() {
                       id="phone"
                       className="form-control"
                       placeholder="Your phone number"
-                      {...register('phone')}
+                      { ...register( 'phone' ) }
                     />
                   </div>
                 </div>
@@ -182,21 +193,21 @@ function ContactForm() {
                     </label>
                     <select
                       id="timezone"
-                      className={`form-select form-control ${errors.timezone ? 'is-invalid' : ''}`}
-                      {...register('timezone', {
+                      className={ `form-select form-control ${ errors.timezone ? 'is-invalid' : '' }` }
+                      { ...register( 'timezone', {
                         required: 'Please select a timezone',
-                      })}
+                      } ) }
                     >
                       <option value="">Select timezone</option>
-                      {TIMEZONES.map((tz) => (
-                        <option key={tz.value} value={tz.value}>
-                          {tz.label}
+                      { TIMEZONES.map( ( tz ) => (
+                        <option key={ tz.value } value={ tz.value }>
+                          { tz.label }
                         </option>
-                      ))}
+                      ) ) }
                     </select>
-                    {errors.timezone && (
-                      <div className="invalid-feedback d-block">{errors.timezone.message}</div>
-                    )}
+                    { errors.timezone && (
+                      <div className="invalid-feedback d-block">{ errors.timezone.message }</div>
+                    ) }
                   </div>
                 </div>
                 <div className="col-lg-6">
@@ -207,15 +218,15 @@ function ContactForm() {
                     <input
                       type="date"
                       id="preferredDate"
-                      className={`form-control ${errors.preferredDate ? 'is-invalid' : ''}`}
-                      min={getMinDate()}
-                      {...register('preferredDate', {
+                      className={ `form-control ${ errors.preferredDate ? 'is-invalid' : '' }` }
+                      min={ getMinDate() }
+                      { ...register( 'preferredDate', {
                         required: 'Please select a date',
-                      })}
+                      } ) }
                     />
-                    {errors.preferredDate && (
-                      <div className="invalid-feedback d-block">{errors.preferredDate.message}</div>
-                    )}
+                    { errors.preferredDate && (
+                      <div className="invalid-feedback d-block">{ errors.preferredDate.message }</div>
+                    ) }
                   </div>
                 </div>
                 <div className="col-lg-6">
@@ -225,21 +236,21 @@ function ContactForm() {
                     </label>
                     <select
                       id="preferredTime"
-                      className={`form-select form-control ${errors.preferredTime ? 'is-invalid' : ''}`}
-                      {...register('preferredTime', {
+                      className={ `form-select form-control ${ errors.preferredTime ? 'is-invalid' : '' }` }
+                      { ...register( 'preferredTime', {
                         required: 'Please select a time',
-                      })}
+                      } ) }
                     >
                       <option value="">Select time</option>
-                      {TIME_SLOTS.map((time) => (
-                        <option key={time} value={time}>
-                          {time}
+                      { TIME_SLOTS.map( ( time ) => (
+                        <option key={ time } value={ time }>
+                          { time }
                         </option>
-                      ))}
+                      ) ) }
                     </select>
-                    {errors.preferredTime && (
-                      <div className="invalid-feedback d-block">{errors.preferredTime.message}</div>
-                    )}
+                    { errors.preferredTime && (
+                      <div className="invalid-feedback d-block">{ errors.preferredTime.message }</div>
+                    ) }
                   </div>
                 </div>
                 <div className="col-lg-12">
@@ -252,32 +263,31 @@ function ContactForm() {
                       rows="4"
                       placeholder="Tell us about your project or any specific topics you'd like to discuss..."
                       className="form-control"
-                      {...register('message')}
+                      { ...register( 'message' ) }
                     ></textarea>
                   </div>
                 </div>
               </div>
 
-              {submitStatus && (
+              { submitStatus && (
                 <div
-                  className={`alert ${
-                    submitStatus.type === 'success'
-                      ? 'alert-success'
-                      : 'alert-danger'
-                  } mb-4`}
+                  className={ `alert ${ submitStatus.type === 'success'
+                    ? 'alert-success'
+                    : 'alert-danger'
+                    } mb-4` }
                   role="alert"
                 >
-                  {submitStatus.message}
+                  { submitStatus.message }
                 </div>
-              )}
+              ) }
 
               <button
                 type="submit"
                 className="butn hover-bg-orange1 text-capitalize bg-white rounded-pill mt-40"
-                disabled={isSubmitting}
+                disabled={ isSubmitting }
               >
                 <span>
-                  {isSubmitting ? (
+                  { isSubmitting ? (
                     <>
                       <span className="spinner-border spinner-border-sm me-2" role="status" aria-hidden="true"></span>
                       Sending...
@@ -287,12 +297,12 @@ function ContactForm() {
                       Book Consultation Call
                       <i className="fal fa-arrow-up-right ms-2"></i>
                     </>
-                  )}
+                  ) }
                 </span>
               </button>
               <p className="fsz-12 color-666 mt-20">
                 By submitting, I agree to the
-                <a href="#" className="color-000 text-decoration-underline">
+                <a href="/terms" className="color-000 text-decoration-underline">
                   Terms & Conditions
                 </a>
               </p>
