@@ -1,6 +1,7 @@
 import React from 'react';
 
-function Portfolio() {
+function Portfolio ()
+{
   return (
     <div className="swiper-slide">
       <section className="section tc-portfolio-style8">
@@ -22,7 +23,7 @@ function Portfolio() {
                           <br /> This text paragraph just a sample
                         </div>
                         <a
-                          href="#"
+                          href="/project"
                           className="butn border rounded-pill border-white hover-bg-orange1 text-capitalize text-white mt-20 fsz-13 pt-15 pb-15"
                         >
                           <span> View Project </span>
@@ -37,7 +38,7 @@ function Portfolio() {
                           <br /> This text paragraph just a sample
                         </div>
                         <a
-                          href="#"
+                          href="/project1"
                           className="butn border rounded-pill border-white hover-bg-orange1 text-capitalize text-white mt-20 fsz-13 pt-15 pb-15"
                         >
                           <span> View Project </span>
@@ -52,7 +53,7 @@ function Portfolio() {
                           <br /> This text paragraph just a sample
                         </div>
                         <a
-                          href="#"
+                          href="/project1"
                           className="butn border rounded-pill border-white hover-bg-orange1 text-capitalize text-white mt-20 fsz-13 pt-15 pb-15"
                         >
                           <span> View Project </span>
@@ -67,7 +68,7 @@ function Portfolio() {
                           <br /> This text paragraph just a sample
                         </div>
                         <a
-                          href="#"
+                          href="/project1"
                           className="butn border rounded-pill border-white hover-bg-orange1 text-capitalize text-white mt-20 fsz-13 pt-15 pb-15"
                         >
                           <span> View Project </span>
@@ -82,7 +83,7 @@ function Portfolio() {
                           <br /> This text paragraph just a sample
                         </div>
                         <a
-                          href="#"
+                          href="/project1"
                           className="butn border rounded-pill border-white hover-bg-orange1 text-capitalize text-white mt-20 fsz-13 pt-15 pb-15"
                         >
                           <span> View Project </span>

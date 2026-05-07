@@ -2,7 +2,8 @@ import React from 'react';
 import { routes } from '../../lib/routes';
 import { CiTextAlignLeft } from 'react-icons/ci';
 
-function Navbar() {
+function Navbar ()
+{
   return (
     <nav className="navbar navbar-expand-lg tc-navbar-style1 section-padding-x px-10 ">
       <div className="container-fluid content">
@@ -11,15 +12,15 @@ function Navbar() {
             src="/assets/images/logo.png"
             alt=""
             className="logo-img"
-            style={{
+            style={ {
               width: '60px',
               height: '80px',
               maxWidth: '100%',
               height: 'auto',
-            }}
+            } }
           />
           <style>
-            {`
+            { `
               @media (max-width: 768px) {
                 .logo-img {
                   width: 40px !important;
@@ -44,17 +45,17 @@ function Navbar() {
           aria-expanded="false"
           aria-label="Toggle navigation"
         >
-         <CiTextAlignLeft className="text-white fsz-50"/>
+          <CiTextAlignLeft className="text-white fsz-50" />
         </button>
         <div className="collapse navbar-collapse" id="navbarSupportedContent">
           <ul className="navbar-nav ms-auto mb-2 mb-lg-0">
-          {routes.map((route) => (
+            { routes.map( ( route ) => (
               <li className="nav-item">
-                <a className="nav-link" href={route.path}>
-                  {route.label}
+                <a className="nav-link" href={ route.path }>
+                  { route.label }
                 </a>
               </li>
-            ))}
+            ) ) }
           </ul>
           {/* <div className="nav-side">
             <a href="/" className="icon ms-3">

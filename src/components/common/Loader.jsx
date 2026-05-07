@@ -1,6 +1,7 @@
 import React from 'react';
 
-function Loader() {
+function Loader ()
+{
   return (
     <div className="loader-wrap">
       <svg viewBox="0 0 1000 1000" preserveAspectRatio="none">
