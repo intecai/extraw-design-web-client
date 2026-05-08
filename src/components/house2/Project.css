@@ -4,7 +4,7 @@
 .jangoz-project-section {
   background: #ffffff;
   min-height: 100vh;
-  padding: 0 0 100px;
+  padding: 0;
   font-family: 'Outfit', sans-serif;
 }
 
@@ -76,6 +76,10 @@
 
 .jangoz-row-3 {
   grid-template-columns: repeat(3, 1fr);
+}
+
+.jangoz-row-1 {
+  grid-template-columns: repeat(1, 1fr);
 }
 
 /* ── Image Card ── */
@@ -187,21 +191,27 @@
   top: 50%;
   transform: translateY(-50%);
   z-index: 10;
+
   width: 52px;
   height: 52px;
   border-radius: 50%;
   border: 2px solid rgba(255, 255, 255, 0.7);
   background: rgba(255, 255, 255, 0.12);
   backdrop-filter: blur(6px);
-  color: #ffffff;
-  font-size: 2rem;
-  line-height: 1;
+  color: #fff;
+
+  font-size: 42px;
+  font-weight: 600;
+  line-height: 72px;
+  /* center vertically */
+  text-align: center;
+
   cursor: pointer;
+  padding: 0;
+
   display: flex;
   align-items: center;
   justify-content: center;
-  transition: background 0.3s ease, border-color 0.3s ease, transform 0.2s ease;
-  padding: 0;
 }
 
 .hero-arrow:hover {
@@ -359,4 +369,21 @@
   .hero-nav__links {
     display: none;
   }
+}
+
+/* ── Footer overrides for Projects page ── */
+.jangoz-project-section .tc-footer-style2 {
+  overflow: hidden;
+}
+
+.jangoz-project-section .tc-footer-style2 .shap {
+  display: none;
+}
+
+.jangoz-project-section .tc-footer-style2 .foot-main-content {
+  padding: 60px 0;
+}
+
+.jangoz-project-section .tc-footer-style2 .foot {
+  padding: 30px 0;
 }

@@ -31,10 +31,9 @@ function App() {
           <Route
   path="/projects"
   element={
-    <>
+  
       <Project />
-      <Footer />
-    </>
+      
   }
 />
           
