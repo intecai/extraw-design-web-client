@@ -1,10 +1,10 @@
 import React, { useState } from "react";
 import "./Project.css";
-
+import Footer from "../home2/Footer"
 /* ─── Project1 Hero Slider images ─── */
 const heroSlides = [
   "/assets/project1/img1.jpg",
-  "/assets/project1/img2.jpg",
+  "/assets/project1/img5.jpg",
   "/assets/project1/img3.jpg",
   "/assets/project1/img4.jpg",
 ];
@@ -90,7 +90,7 @@ const jangozImages = [
   "/assets/jangoz/jangoz10.JPG",
   "/assets/jangoz/jangoz11.JPG",
   "/assets/jangoz/jangoz12.JPG",
-  // "/assets/jangoz/jangoz13.JPG",
+
 ];
 
 /* ─── Manoj Bhavan ─── */
@@ -183,11 +183,10 @@ const ImageRow = ( { images, rowClass, projectName, offset = 0 } ) => (
 
 const Project = () =>
 {
-  /* Jangoz rows */
+  /* Jangoz rows — 4-4-4 */
   const jRow1 = jangozImages.slice( 0, 4 );
-  const jRow2 = jangozImages.slice( 4, 7 );
-  const jRow3 = jangozImages.slice( 7, 10 );
-  const jRow4 = jangozImages.slice( 10, 13 );
+  const jRow2 = jangozImages.slice( 4, 8 );
+  const jRow3 = jangozImages.slice( 8, 12 );
 
   /* Padmam rows — 6 rows of 4 */
   const padmamRows = chunkArray( padmamImages, 4 );
@@ -206,19 +205,19 @@ const Project = () =>
 
         {/* ══════════════ JANGOZ ══════════════ */ }
         <div className="jangoz-heading-wrapper">
-          <h2 className="jangoz-heading jangoz-subheading">JANGOZ</h2>
+
+          <h1 style={ { fontWeight: "450" } }>JANGOZ</h1>
           <div className="jangoz-heading-line" />
         </div>
 
         <ImageRow images={ jRow1 } rowClass="jangoz-row-4" projectName="Jangoz" offset={ 0 } />
-        <ImageRow images={ jRow2 } rowClass="jangoz-row-3" projectName="Jangoz" offset={ 4 } />
-        <ImageRow images={ jRow3 } rowClass="jangoz-row-3" projectName="Jangoz" offset={ 7 } />
-        <ImageRow images={ jRow4 } rowClass="jangoz-row-3" projectName="Jangoz" offset={ 10 } />
+        <ImageRow images={ jRow2 } rowClass="jangoz-row-4" projectName="Jangoz" offset={ 4 } />
+        <ImageRow images={ jRow3 } rowClass="jangoz-row-4" projectName="Jangoz" offset={ 8 } />
         <br /><br /><br />
 
         {/* ══════════════ MANOJ BHAVAN ══════════════ */ }
         <div className="jangoz-heading-wrapper">
-          <h2 className="jangoz-heading jangoz-subheading">MANOJ BHAVAN</h2>
+          <h1 style={ { fontWeight: "450" } }>MANOJ BHAVAN</h1>
           <div className="jangoz-heading-line" />
         </div>
 
@@ -228,7 +227,7 @@ const Project = () =>
 
         {/* ══════════════ PADMAM ══════════════ */ }
         <div className="jangoz-heading-wrapper">
-          <h2 className="jangoz-heading jangoz-subheading">PADMAM</h2>
+          <h1 style={ { fontWeight: "450" } }>PADMAM</h1>
           <div className="jangoz-heading-line" />
         </div>
 
@@ -245,7 +244,7 @@ const Project = () =>
 
         {/* ══════════════ RWD CLUB HOUSE ══════════════ */ }
         <div className="jangoz-heading-wrapper">
-          <h2 className="jangoz-heading jangoz-subheading">RWD CLUB HOUSE</h2>
+          <h1 style={ { fontWeight: "450" } }>RWD CLUB HOUSE</h1>
           <div className="jangoz-heading-line" />
         </div>
 
@@ -260,7 +259,14 @@ const Project = () =>
         ) ) }
 
       </div>
+
+      <div style={ { margin: 0, padding: 0 } }>
+        <Footer />
+      </div>
+
     </section>
+
+
 
   );
 };
