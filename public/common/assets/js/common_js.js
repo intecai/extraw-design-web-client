@@ -8,7 +8,7 @@
     window.__archMobile = !!(coarse || reduced || narrow);
 })();
 
-$( function() {
+$(function () {
 
     var wind = $(window);
 
@@ -29,11 +29,11 @@ $( function() {
             $(this).css("background-image", "url(" + $(this).data("background") + ")");
         }
     });
-    
+
 
     // ---------- to top -----------
 
-    wind.on("scroll", function() {
+    wind.on("scroll", function () {
 
         var bodyScroll = wind.scrollTop(),
             toTop = $("#to_top")
@@ -48,7 +48,7 @@ $( function() {
         }
     });
 
-    $('#to_top').click(function() {
+    $('#to_top').click(function () {
         $('html, body').animate({
             scrollTop: 0
         }, 0);
@@ -62,25 +62,25 @@ $( function() {
     });
 
 
-     /* ==  float_box_container button  == */
-    $( ".float_box_container" ).mousemove(function(e) {
-        var parentOffset = $(this).offset(); 
+    /* ==  float_box_container button  == */
+    $(".float_box_container").mousemove(function (e) {
+        var parentOffset = $(this).offset();
         var relX = e.pageX - parentOffset.left;
         var relY = e.pageY - parentOffset.top;
-        $(".float_box").css({"left": relX, "top": relY });
+        $(".float_box").css({ "left": relX, "top": relY });
         $(".float_box").addClass("show");
     });
-    $( ".float_box_container" ).mouseleave(function(e) {
+    $(".float_box_container").mouseleave(function (e) {
         $(".float_box").removeClass("show");
     });
 
     // -------- fav-btn --------
-    $(".fav-btn").on("click", function(){
+    $(".fav-btn").on("click", function () {
         $(this).toggleClass("active");
     })
 
     // -------- cls --------
-    $(".cls").on("click", function(){
+    $(".cls").on("click", function () {
         $(this).parent().fadeOut();
     })
 
@@ -93,11 +93,11 @@ $( function() {
     // ---------- tooltip -----------
     var tooltipTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="tooltip"]'))
     var tooltipList = tooltipTriggerList.map(function (tooltipTriggerEl) {
-    return new bootstrap.Tooltip(tooltipTriggerEl)
+        return new bootstrap.Tooltip(tooltipTriggerEl)
     })
 
     // ---------- to top -----------
-    wind.on("scroll", function() {
+    wind.on("scroll", function () {
 
         var bodyScroll = wind.scrollTop(),
             toTop = $(".to_top")
@@ -111,13 +111,13 @@ $( function() {
             toTop.removeClass("show");
         }
     });
-        
+
 });
 
 
 
 // ------------ Preloader -----------
-$( function() {
+$(function () {
     if (typeof gsap === 'undefined') {
         $(".loader-wrap").css({ display: "none" });
         return;
