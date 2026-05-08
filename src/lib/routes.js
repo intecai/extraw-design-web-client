@@ -13,6 +13,10 @@ export const routes = [
         label: "Services",
     },
     {
+        path: '/projects',
+        label: "Projects",
+    },
+    {
         path: '/contact',
         label: "Contact us",
     },

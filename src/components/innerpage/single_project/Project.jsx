@@ -1,6 +1,7 @@
 import React from 'react';
 
-function Project() {
+function Project ()
+{
   return (
     <section className="tc-project-style1 header">
       <div className="main-info">
@@ -251,7 +252,7 @@ function Project() {
           <div className="swiper-slide">
             <div className="img">
               <img
-                src="/innerpages/assets/img/s_project/s1.jpg"
+                src="/assets/project1/img1.JPG"
                 alt=""
                 className="img-cover"
               />
@@ -260,7 +261,7 @@ function Project() {
           <div className="swiper-slide">
             <div className="img">
               <img
-                src="/innerpages/assets/img/s_project/s2.jpg"
+                src="/assets/project1/img2.jpg"
                 alt=""
                 className="img-cover"
               />
@@ -269,7 +270,7 @@ function Project() {
           <div className="swiper-slide">
             <div className="img">
               <img
-                src="/innerpages/assets/img/s_project/s3.jpg"
+                src="/assets/project1/img3.jpg"
                 alt=""
                 className="img-cover"
               />
@@ -278,16 +279,7 @@ function Project() {
           <div className="swiper-slide">
             <div className="img">
               <img
-                src="/innerpages/assets/img/s_project/s4.jpg"
-                alt=""
-                className="img-cover"
-              />
-            </div>
-          </div>
-          <div className="swiper-slide">
-            <div className="img">
-              <img
-                src="/innerpages/assets/img/s_project/s5.jpg"
+                src="/assets/project1/img4.JPG"
                 alt=""
                 className="img-cover"
               />
