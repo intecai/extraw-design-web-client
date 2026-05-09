@@ -15,7 +15,7 @@ import HomeInteriors from './pages/innerpages/HomeInteriors';
 import Loader from './components/common/Loader';
 import SingleProject from './pages/innerpages/single_project';
 import Footer from './components/home2/Footer';
-import Project from './components/house2/Project';
+import ProjectPage from './pages/project';
 
 
 function App() {
@@ -29,14 +29,14 @@ function App() {
           <Route path="/about" element={< Home6 />} />
           <Route path="/services" element={<Home3 />} />
           <Route
-  path="/projects"
-  element={
-  
-      <Project />
-      
-  }
-/>
-          
+            path="/projects"
+            element={
+
+              <ProjectPage />
+
+            }
+          />
+
           <Route path="/services/home-interiors" element={<HomeInteriors />} />
           <Route path="/services/corporate-interiors" element={<CorporateInteriors />} />
           <Route path="/services/commercial-restaurant-interiors" element={<CommercialRestaurantInteriors />} />
