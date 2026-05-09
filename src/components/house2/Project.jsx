@@ -1,80 +1,6 @@
 import React, { useState } from "react";
 import "./Project.css";
-import Footer from "../home2/Footer"
-/* ─── Project1 Hero Slider images ─── */
-const heroSlides = [
-  "/assets/project1/img1.jpg",
-  "/assets/project1/img5.jpg",
-  "/assets/project1/img3.jpg",
-  "/assets/project1/img4.jpg",
-];
 
-/* ─── Hero Slider Component ─── */
-const HeroSlider = () =>
-{
-  const [ current, setCurrent ] = useState( 0 );
-
-  const prev = () => setCurrent( ( c ) => ( c - 1 + heroSlides.length ) % heroSlides.length );
-  const next = () => setCurrent( ( c ) => ( c + 1 ) % heroSlides.length );
-
-  const navLinks = [
-    { label: 'Home', href: '/' },
-    { label: 'About', href: '/about' },
-    { label: 'Services', href: '/services' },
-    { label: 'Projects', href: '/projects' },
-    { label: 'Contact us', href: '/contact' },
-  ];
-
-  return (
-    <div className="hero-slider">
-
-      {/* ── Navbar overlay ── */ }
-      <nav className="hero-nav">
-        <a href="/" className="hero-nav__brand">
-          <img src="/assets/images/logo.png" alt="Extraw logo" className="hero-nav__logo" />
-        </a>
-        <ul className="hero-nav__links">
-          { navLinks.map( ( link ) => (
-            <li key={ link.label }>
-              <a href={ link.href } className="hero-nav__link">{ link.label }</a>
-            </li>
-          ) ) }
-        </ul>
-      </nav>
-
-      { heroSlides.map( ( src, i ) => (
-        <div
-          key={ i }
-          className={ `hero-slide ${ i === current ? 'hero-slide--active' : '' }` }
-        >
-          <img src={ src } alt={ `Project slide ${ i + 1 }` } />
-        </div>
-      ) ) }
-
-      {/* Left arrow */ }
-      <button className="hero-arrow hero-arrow--left" onClick={ prev } aria-label="Previous slide">
-        &#8249;
-      </button>
-
-      {/* Right arrow */ }
-      <button className="hero-arrow hero-arrow--right" onClick={ next } aria-label="Next slide">
-        &#8250;
-      </button>
-
-      {/* Dot indicators */ }
-      <div className="hero-dots">
-        { heroSlides.map( ( _, i ) => (
-          <button
-            key={ i }
-            className={ `hero-dot ${ i === current ? 'hero-dot--active' : '' }` }
-            onClick={ () => setCurrent( i ) }
-            aria-label={ `Go to slide ${ i + 1 }` }
-          />
-        ) ) }
-      </div>
-    </div>
-  );
-};
 
 /* ─── Jangoz ─── */
 const jangozImages = [
@@ -198,7 +124,7 @@ const Project = () =>
     <section className="jangoz-project-section">
 
       {/* ══════════════ HERO SLIDER ══════════════ */ }
-      <HeroSlider />
+
 
       <div className="jangoz-container">
         <br /><br /><br />
@@ -222,7 +148,18 @@ const Project = () =>
         </div>
 
 
-        <ImageRow images={ manojImages } rowClass="jangoz-row-3" projectName="Manoj Bhavan" offset={ 0 } />
+        <div className="jangoz-row jangoz-row-4">
+          { manojImages.map( ( src, i ) => (
+            <div key={ i } className="jangoz-img-card">
+              <img src={ src } alt={ `Manoj Bhavan ${ i + 1 }` } loading="lazy" />
+              <div className="jangoz-img-overlay">
+                <span>{ `Manoj Bhavan ${ i + 1 }` }</span>
+              </div>
+            </div>
+          ) ) }
+          {/* Empty 4th slot */ }
+          <div className="jangoz-img-card" style={ { visibility: 'hidden' } } />
+        </div>
         <br /><br /><br />
 
         {/* ══════════════ PADMAM ══════════════ */ }
@@ -260,9 +197,7 @@ const Project = () =>
 
       </div>
 
-      <div style={ { margin: 0, padding: 0 } }>
-        <Footer />
-      </div>
+
 
     </section>
 

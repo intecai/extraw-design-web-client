@@ -20,10 +20,15 @@
   margin-bottom: 60px;
 }
 
+.jangoz-heading-wrapper h1 {
+  font-size: 1.9rem;
+  letter-spacing: 0.08em;
+}
+
 .jangoz-heading {
   font-family: 'Cinzel', serif;
-  font-size: clamp(3.5rem, 10vw, 8rem);
-  font-weight: 700;
+  font-size: 20px;
+  font-weight: 500;
   letter-spacing: 0.08em;
   color: transparent;
   -webkit-text-stroke: 1px #1a1a1a;
@@ -39,16 +44,12 @@
 
 /* Smaller headings for sub-projects */
 .jangoz-subheading {
-  font-size: clamp(1.8rem, 4vw, 3.5rem);
+  font-size: 18px;
   letter-spacing: 0.05em;
 }
 
 .jangoz-heading-line {
-  width: 80px;
-  height: 3px;
-  background: linear-gradient(90deg, transparent, #c9a84c, transparent);
-  margin: 0 auto;
-  border-radius: 2px;
+  display: none;
 }
 
 @keyframes headingFadeIn {
