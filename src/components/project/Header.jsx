@@ -1,5 +1,5 @@
 import React from 'react';
-import data from '../../data/home3_construction/slides';
+import data from '../../data/project/sildem';
 function Header ()
 {
     return (
