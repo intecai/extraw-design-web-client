@@ -127,10 +127,10 @@ const Project = () =>
 
 
       <div className="jangoz-container">
-        <br /><br /><br />
+
 
         {/* ══════════════ JANGOZ ══════════════ */ }
-        <div className="jangoz-heading-wrapper">
+        <div className="jangoz-heading-wrapper jangoz-section-gap">
 
           <h1 style={ { fontWeight: "450" } }>JANGOZ</h1>
           <div className="jangoz-heading-line" />
@@ -139,10 +139,10 @@ const Project = () =>
         <ImageRow images={ jRow1 } rowClass="jangoz-row-4" projectName="Jangoz" offset={ 0 } />
         <ImageRow images={ jRow2 } rowClass="jangoz-row-4" projectName="Jangoz" offset={ 4 } />
         <ImageRow images={ jRow3 } rowClass="jangoz-row-4" projectName="Jangoz" offset={ 8 } />
-        <br /><br /><br />
+
 
         {/* ══════════════ MANOJ BHAVAN ══════════════ */ }
-        <div className="jangoz-heading-wrapper">
+        <div className="jangoz-heading-wrapper jangoz-section-gap">
           <h1 style={ { fontWeight: "450" } }>MANOJ BHAVAN</h1>
           <div className="jangoz-heading-line" />
         </div>
@@ -160,10 +160,8 @@ const Project = () =>
           {/* Empty 4th slot */ }
           <div className="jangoz-img-card" style={ { visibility: 'hidden' } } />
         </div>
-        <br /><br /><br />
-
         {/* ══════════════ PADMAM ══════════════ */ }
-        <div className="jangoz-heading-wrapper">
+        <div className="jangoz-heading-wrapper jangoz-section-gap">
           <h1 style={ { fontWeight: "450" } }>PADMAM</h1>
           <div className="jangoz-heading-line" />
         </div>
@@ -177,10 +175,10 @@ const Project = () =>
             offset={ rowIdx * 4 }
           />
         ) ) }
-        <br /><br /><br />
+
 
         {/* ══════════════ RWD CLUB HOUSE ══════════════ */ }
-        <div className="jangoz-heading-wrapper">
+        <div className="jangoz-heading-wrapper jangoz-section-gap">
           <h1 style={ { fontWeight: "450" } }>RWD CLUB HOUSE</h1>
           <div className="jangoz-heading-line" />
         </div>
