@@ -16,7 +16,7 @@ const serviceData = {
   title: "Premier Commercial Restaurants Interior Designing Company in Chennai",
   introTitle: "Premier Commercial Restaurants Interior Designing Company in Chennai",
   introSubtitle: "Commercial Restaurant Interiors",
-  introDescription: "Welcome to Extraw Designs, the leading commercial restaurants interior designing company in Chennai, where creativity meets functionality to craft extraordinary dining spaces. We specialize in creating visually stunning and efficient interiors that reflect your restaurant's concept, enhance the dining experience, and attract more patrons. From luxury fine-dining restaurants to cozy cafes, our designs cater to diverse culinary styles and brand identities.",
+  introDescription: "welcome to Extraw Designs, the leading commercial restaurants interior designing company in Chennai, where creativity meets functionality to craft extraordinary dining spaces. We specialize in creating visually stunning and efficient interiors that reflect your restaurant's concept, enhance the dining experience, and attract more patrons. From luxury fine-dining restaurants to cozy cafes, our designs cater to diverse culinary styles and brand identities.",
   whyChooseUs: {
     title: "Extraw Designs For Your Commercial Restaurant Interiors",
     items: [
@@ -44,7 +44,8 @@ const serviceData = {
   }
 };
 
-function CommercialRestaurantInteriors() {
+function CommercialRestaurantInteriors ()
+{
   return (
     <>
       <Helmet>
@@ -65,18 +66,18 @@ function CommercialRestaurantInteriors() {
         <Menu />
         <div className="smooth-scroll-content" id="scrollsmoother-container">
           <Navbar2 />
-          <ServiceSlider 
-            heroImage={serviceData.heroImage}
-            title={serviceData.title}
-            breadcrumb={serviceData.breadcrumb}
+          <ServiceSlider
+            heroImage={ serviceData.heroImage }
+            title={ serviceData.title }
+            breadcrumb={ serviceData.breadcrumb }
           />
-          <ServiceContent 
-            introTitle={serviceData.introTitle}
-            introSubtitle={serviceData.introSubtitle}
-            introDescription={serviceData.introDescription}
-            whyChooseUs={serviceData.whyChooseUs}
-            categories={serviceData.categories}
-            features={serviceData.features}
+          <ServiceContent
+            introTitle={ serviceData.introTitle }
+            introSubtitle={ serviceData.introSubtitle }
+            introDescription={ serviceData.introDescription }
+            whyChooseUs={ serviceData.whyChooseUs }
+            categories={ serviceData.categories }
+            features={ serviceData.features }
           />
           <Footer />
         </div>

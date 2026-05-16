@@ -29,12 +29,12 @@ const serviceData = {
   categories: {
     title: "Architecture & Interior Design Services",
     items: [
-      { title: "Residential Architecture", description: "Beautiful and functional home designs that reflect your personality and lifestyle aspirations." },
-      { title: "Commercial Architecture", description: "Modern commercial buildings designed for optimal business operations and aesthetic appeal." },
-      { title: "Interior Architecture", description: "Structural interior modifications and space planning that transform how you experience your space." },
-      { title: "Renovation & Restoration", description: "Breathing new life into existing structures while preserving their character and value." },
-      { title: "3D Visualization", description: " photorealistic renders and virtual walkthroughs to visualize your project before construction." },
-      { title: "Project Management", description: "End-to-end project oversight ensuring quality, timeline, and budget compliance." }
+      { title: "Residential Architecture", description: "Designs that transform houses into homes, focusing on comfort, aesthetics, and functional living spaces" },
+      { title: "Commercial Architecture", description: "Sophisticated designs for offices, retail spaces, and commercial hubs ensuring functionality and visual appeal." },
+      { title: "Industrial Architecture", description: "Tailored layouts optimizing workflow, safety, and functionality for manufacturing units and industrial facilities." },
+      { title: "Urban Planning", description: "Smart city concepts and sustainable urban designs ensuring efficient land use and infrastructure development." },
+      { title: "Landscape Architecture", description: " Creative outdoor designs integrating nature with structures for aesthetically pleasing and functional spaces." },
+      { title: "Interior Architecture", description: "Detailed designs merging interiors with architectural elements for cohesive and harmonious environments." }
     ]
   },
   features: {
@@ -44,7 +44,8 @@ const serviceData = {
   }
 };
 
-function ArchitectureInteriorDesign() {
+function ArchitectureInteriorDesign ()
+{
   return (
     <>
       <Helmet>
@@ -65,18 +66,18 @@ function ArchitectureInteriorDesign() {
         <Menu />
         <div className="smooth-scroll-content" id="scrollsmoother-container">
           <Navbar2 />
-          <ServiceSlider 
-            heroImage={serviceData.heroImage}
-            title={serviceData.title}
-            breadcrumb={serviceData.breadcrumb}
+          <ServiceSlider
+            heroImage={ serviceData.heroImage }
+            title={ serviceData.title }
+            breadcrumb={ serviceData.breadcrumb }
           />
-          <ServiceContent 
-            introTitle={serviceData.introTitle}
-            introSubtitle={serviceData.introSubtitle}
-            introDescription={serviceData.introDescription}
-            whyChooseUs={serviceData.whyChooseUs}
-            categories={serviceData.categories}
-            features={serviceData.features}
+          <ServiceContent
+            introTitle={ serviceData.introTitle }
+            introSubtitle={ serviceData.introSubtitle }
+            introDescription={ serviceData.introDescription }
+            whyChooseUs={ serviceData.whyChooseUs }
+            categories={ serviceData.categories }
+            features={ serviceData.features }
           />
           <Footer />
         </div>
