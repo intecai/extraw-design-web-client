@@ -130,8 +130,7 @@ const Project = () =>
 
 
         {/* ══════════════ JANGOZ ══════════════ */ }
-        <div className="jangoz-heading-wrapper jangoz-section-gap">
-
+        <div className="jangoz-heading-wrapper jangoz-section-gap" id="jangoz">
           <h1 style={ { fontWeight: "450" } }>JANGOZ</h1>
           <div className="jangoz-heading-line" />
         </div>
@@ -142,7 +141,7 @@ const Project = () =>
 
 
         {/* ══════════════ MANOJ BHAVAN ══════════════ */ }
-        <div className="jangoz-heading-wrapper jangoz-section-gap">
+        <div className="jangoz-heading-wrapper jangoz-section-gap" id="manoj-bhavan">
           <h1 style={ { fontWeight: "450" } }>MANOJ BHAVAN</h1>
           <div className="jangoz-heading-line" />
         </div>
@@ -161,7 +160,7 @@ const Project = () =>
           <div className="jangoz-img-card" style={ { visibility: 'hidden' } } />
         </div>
         {/* ══════════════ PADMAM ══════════════ */ }
-        <div className="jangoz-heading-wrapper jangoz-section-gap">
+        <div className="jangoz-heading-wrapper jangoz-section-gap" id="padmam">
           <h1 style={ { fontWeight: "450" } }>PADMAM</h1>
           <div className="jangoz-heading-line" />
         </div>
@@ -178,7 +177,7 @@ const Project = () =>
 
 
         {/* ══════════════ RWD CLUB HOUSE ══════════════ */ }
-        <div className="jangoz-heading-wrapper jangoz-section-gap">
+        <div className="jangoz-heading-wrapper jangoz-section-gap" id="rwd-club-house">
           <h1 style={ { fontWeight: "450" } }>RWD CLUB HOUSE</h1>
           <div className="jangoz-heading-line" />
         </div>

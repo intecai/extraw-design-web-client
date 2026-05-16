@@ -1,6 +1,7 @@
 import React from 'react';
 
-function Process() {
+function Process ()
+{
   return (
     <section className="tc-proccess-style7">
       <div className="container">
@@ -95,7 +96,7 @@ function Process() {
                       data-bs-toggle="collapse"
                       data-bs-target="#collapse4"
                     >
-                      <span className="num"> 4. </span> Handover
+                      <span className="num"> 4. </span> Handove
                     </button>
                   </h2>
                   <div

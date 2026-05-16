@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import data from '../../data/home3_construction/portfolio';
 function Portfolio() {
   return (
@@ -24,14 +25,14 @@ function Portfolio() {
               </div>
             </div>
             <div className="col-lg-2 text-lg-end mt-4 mt-lg-0">
-              <a
-                href="#"
+              <Link
+                to="/projects"
                 className="text-uppercase hover-yellow1 wow fadeInUp slow"
                 data-wow-delay="0.6s"
               >
                 <span> all projects </span>
                 <i className="ti-arrow-top-right ms-2"></i>
-              </a>
+              </Link>
             </div>
           </div>
         </div>
