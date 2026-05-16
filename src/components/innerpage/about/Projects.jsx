@@ -1,13 +1,14 @@
 import React from 'react';
 
-function Projects() {
+function Projects ()
+{
   return (
     <section className="tc-projects-style2">
       <div className="container">
         <div className="row align-items-center">
           <div className="col-lg-8">
             <h2 className="fsz-45 fw-500">
-              Latest{' '}
+              Latest{ ' ' }
               <span className="sub-font fst-italic color-orange1 fw-400">
                 projects
               </span>
@@ -15,7 +16,7 @@ function Projects() {
           </div>
           <div className="col-lg-4 text-lg-end mt-4 mt-lg-0">
             <a
-              href="#"
+              href="/projects"
               className="butn borderd border rounded-pill hover-bg-black"
             >
               <span>
@@ -35,7 +36,7 @@ function Projects() {
                 data-bs-target="#pills-proj1"
                 type="button"
               >
-                Interior Design
+                Home Interior
               </button>
             </li>
             <li className="nav-item" role="presentation">
@@ -46,7 +47,7 @@ function Projects() {
                 data-bs-target="#pills-proj2"
                 type="button"
               >
-                Landscape
+                Corporate Interior
               </button>
             </li>
             <li className="nav-item" role="presentation">
@@ -57,7 +58,7 @@ function Projects() {
                 data-bs-target="#pills-proj1"
                 type="button"
               >
-                Rennovation
+                Commercial Restaurant
               </button>
             </li>
             <li className="nav-item" role="presentation">
@@ -68,7 +69,7 @@ function Projects() {
                 data-bs-target="#pills-proj2"
                 type="button"
               >
-                Furniture
+                Architecture
               </button>
             </li>
           </ul>
@@ -86,9 +87,9 @@ function Projects() {
               <div className="swiper-wrapper">
                 <div className="swiper-slide">
                   <div className="project-card">
-                    <a href="#" className="img">
+                    <a href="/projects#manoj-bhavan" className="img">
                       <img
-                        src="/innerpages/assets/img/projects/proj1.jpg"
+                        src="/innerpages/assets/img/projects/proj2.jpg"
                         alt=""
                         className="img-cover"
                       />
@@ -110,44 +111,14 @@ function Projects() {
                         <a href="#"> Furniture </a>
                       </div>
                       <h3 className="title">
-                        <a href="#"> ABERY Apartment Master Bedroom </a>
+                        <a href="/projects#manoj-bhavan"> Manoj Bhavan </a>
                       </h3>
                     </div>
                   </div>
                 </div>
                 <div className="swiper-slide">
                   <div className="project-card">
-                    <a href="#" className="img">
-                      <img
-                        src="/innerpages/assets/img/projects/proj2.jpg"
-                        alt=""
-                        className="img-cover"
-                      />
-                      <div className="year">
-                        <span className="txt"> 2022 </span>
-                        <img
-                          src="/innerpages/assets/img/project_shape.png"
-                          alt=""
-                          className="bg"
-                        />
-                      </div>
-                      <div className="arrow">
-                        <i className="fal fa-long-arrow-right ico-45"></i>
-                      </div>
-                    </a>
-                    <div className="info">
-                      <div className="tags">
-                        <a href="#"> Furniture </a>
-                      </div>
-                      <h3 className="title">
-                        <a href="#"> Neoclassical Sofa </a>
-                      </h3>
-                    </div>
-                  </div>
-                </div>
-                <div className="swiper-slide">
-                  <div className="project-card">
-                    <a href="#" className="img">
+                    <a href="/projects#padmam" className="img">
                       <img
                         src="/innerpages/assets/img/projects/proj3.jpg"
                         alt=""
@@ -167,18 +138,17 @@ function Projects() {
                     </a>
                     <div className="info">
                       <div className="tags">
-                        <a href="#"> Interior Design </a>
                         <a href="#"> Furniture </a>
                       </div>
                       <h3 className="title">
-                        <a href="#"> Salone Skin & Spa </a>
+                        <a href="/projects#padmam"> Padmam </a>
                       </h3>
                     </div>
                   </div>
                 </div>
                 <div className="swiper-slide">
                   <div className="project-card">
-                    <a href="#" className="img">
+                    <a href="/projects#rwd-club-house" className="img">
                       <img
                         src="/innerpages/assets/img/projects/proj4.jpg"
                         alt=""
@@ -202,7 +172,38 @@ function Projects() {
                         <a href="#"> Furniture </a>
                       </div>
                       <h3 className="title">
-                        <a href="#"> Boston D53 Deluxe Apartment </a>
+                        <a href="/projects#rwd-club-house"> RWD Club House </a>
+                      </h3>
+                    </div>
+                  </div>
+                </div>
+                <div className="swiper-slide">
+                  <div className="project-card">
+                    <a href="/projects#jangoz" className="img">
+                      <img
+                        src="/innerpages/assets/img/projects/proj1.jpg"
+                        alt=""
+                        className="img-cover"
+                      />
+                      <div className="year">
+                        <span className="txt"> 2022 </span>
+                        <img
+                          src="/innerpages/assets/img/project_shape.png"
+                          alt=""
+                          className="bg"
+                        />
+                      </div>
+                      <div className="arrow">
+                        <i className="fal fa-long-arrow-right ico-45"></i>
+                      </div>
+                    </a>
+                    <div className="info">
+                      <div className="tags">
+                        <a href="#"> Interior Design </a>
+                        <a href="#"> Furniture </a>
+                      </div>
+                      <h3 className="title">
+                        <a href="/projects#jangoz"> Jangoz </a>
                       </h3>
                     </div>
                   </div>
@@ -227,9 +228,9 @@ function Projects() {
               <div className="swiper-wrapper">
                 <div className="swiper-slide">
                   <div className="project-card">
-                    <a href="#" className="img">
+                    <a href="/projects#padmam" className="img">
                       <img
-                        src="/innerpages/assets/img/projects/proj3.jpg"
+                        src="/innerpages/assets/img/projects/proj7.jpg"
                         alt=""
                         className="img-cover"
                       />
@@ -251,16 +252,16 @@ function Projects() {
                         <a href="#"> Furniture </a>
                       </div>
                       <h3 className="title">
-                        <a href="#"> Salone Skin & Spa </a>
+                        <a href="/projects#padmam"> Padmam </a>
                       </h3>
                     </div>
                   </div>
                 </div>
                 <div className="swiper-slide">
                   <div className="project-card">
-                    <a href="#" className="img">
+                    <a href="/projects#rwd-club-house" className="img">
                       <img
-                        src="/innerpages/assets/img/projects/proj4.jpg"
+                        src="/innerpages/assets/img/projects/proj8.jpg"
                         alt=""
                         className="img-cover"
                       />
@@ -282,16 +283,16 @@ function Projects() {
                         <a href="#"> Furniture </a>
                       </div>
                       <h3 className="title">
-                        <a href="#"> Boston D53 Deluxe Apartment </a>
+                        <a href="/projects#rwd-club-house"> RWD Club House </a>
                       </h3>
                     </div>
                   </div>
                 </div>
                 <div className="swiper-slide">
                   <div className="project-card">
-                    <a href="#" className="img">
+                    <a href="/projects#jangoz" className="img">
                       <img
-                        src="/innerpages/assets/img/projects/proj1.jpg"
+                        src="/innerpages/assets/img/projects/proj5.jpg"
                         alt=""
                         className="img-cover"
                       />
@@ -313,16 +314,16 @@ function Projects() {
                         <a href="#"> Furniture </a>
                       </div>
                       <h3 className="title">
-                        <a href="#"> ABERY Apartment Master Bedroom </a>
+                        <a href="/projects#jangoz"> Jangoz </a>
                       </h3>
                     </div>
                   </div>
                 </div>
                 <div className="swiper-slide">
                   <div className="project-card">
-                    <a href="#" className="img">
+                    <a href="/projects#manoj-bhavan" className="img">
                       <img
-                        src="/innerpages/assets/img/projects/proj2.jpg"
+                        src="/innerpages/assets/img/projects/proj6.jpg"
                         alt=""
                         className="img-cover"
                       />
@@ -343,7 +344,7 @@ function Projects() {
                         <a href="#"> Furniture </a>
                       </div>
                       <h3 className="title">
-                        <a href="#"> Neoclassical Sofa </a>
+                        <a href="/projects#manoj-bhavan"> Manoj Bhavan </a>
                       </h3>
                     </div>
                   </div>

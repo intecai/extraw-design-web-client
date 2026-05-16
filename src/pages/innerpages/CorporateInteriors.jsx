@@ -31,7 +31,7 @@ const serviceData = {
     items: [
       { title: "Executive Office Design", description: "Sophisticated designs with premium finishes to create a professional and inspiring space for leaders." },
       { title: "Open Workstation", description: "Collaborative and ergonomic layouts promote teamwork while maximizing space efficiency and comfort." },
-      { title: "Conference Rooms", description: "Technologically equipped, acoustically optimized rooms for effective collaboration and professional discussions." },
+      { title: "Meeting & Conference Rooms", description: "Technologically equipped, acoustically optimized rooms for effective collaboration and professional discussions." },
       { title: "Reception & Lobby Areas", description: "Welcoming and impactful designs that leave a lasting impression on clients and visitors." },
       { title: "Breakout Spaces", description: "Relaxing areas designed to rejuvenate employees, encouraging interactions and creative thinking." },
       { title: "Cafeteria Design", description: "Inviting and functional dining areas that offer a refreshing experience during work breaks." }
@@ -44,7 +44,8 @@ const serviceData = {
   }
 };
 
-function CorporateInteriors() {
+function CorporateInteriors ()
+{
   return (
     <>
       <Helmet>
@@ -65,18 +66,18 @@ function CorporateInteriors() {
         <Menu />
         <div className="smooth-scroll-content" id="scrollsmoother-container">
           <Navbar2 />
-          <ServiceSlider 
-            heroImage={serviceData.heroImage}
-            title={serviceData.title}
-            breadcrumb={serviceData.breadcrumb}
+          <ServiceSlider
+            heroImage={ serviceData.heroImage }
+            title={ serviceData.title }
+            breadcrumb={ serviceData.breadcrumb }
           />
-          <ServiceContent 
-            introTitle={serviceData.introTitle}
-            introSubtitle={serviceData.introSubtitle}
-            introDescription={serviceData.introDescription}
-            whyChooseUs={serviceData.whyChooseUs}
-            categories={serviceData.categories}
-            features={serviceData.features}
+          <ServiceContent
+            introTitle={ serviceData.introTitle }
+            introSubtitle={ serviceData.introSubtitle }
+            introDescription={ serviceData.introDescription }
+            whyChooseUs={ serviceData.whyChooseUs }
+            categories={ serviceData.categories }
+            features={ serviceData.features }
           />
           <Footer />
         </div>

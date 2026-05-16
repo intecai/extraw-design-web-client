@@ -1,13 +1,14 @@
 import React from 'react';
 
-function Projects() {
+function Projects ()
+{
   return (
     <section className="tc-projects-style2">
       <div className="container">
         <div className="row align-items-center">
           <div className="col-lg-8">
             <h2 className="fsz-45 fw-500">
-              Latest{' '}
+              Latest{ ' ' }
               <span className="sub-font fst-italic color-orange1 fw-400">
                 projects
               </span>
@@ -15,7 +16,7 @@ function Projects() {
           </div>
           <div className="col-lg-4 text-lg-end mt-4 mt-lg-0">
             <a
-              href="#"
+              href="/projects"
               className="butn borderd border rounded-pill hover-bg-black"
             >
               <span>
@@ -57,7 +58,7 @@ function Projects() {
                 data-bs-target="#pills-proj1"
                 type="button"
               >
-                Rennovation
+                Rennovatio
               </button>
             </li>
             <li className="nav-item" role="presentation">
@@ -86,7 +87,7 @@ function Projects() {
               <div className="swiper-wrapper">
                 <div className="swiper-slide">
                   <div className="project-card">
-                    <a href="#" className="img">
+                    <a href="/projects#jangoz" className="img">
                       <img
                         src="/innerpages/assets/img/projects/proj1.jpg"
                         alt=""
@@ -110,7 +111,7 @@ function Projects() {
                         <a href="#"> Furniture </a>
                       </div>
                       <h3 className="title">
-                        <a href="#"> ABERY Apartment Master Bedroom </a>
+                        <a href="/projects#jangoz"> Jangoz </a>
                       </h3>
                     </div>
                   </div>

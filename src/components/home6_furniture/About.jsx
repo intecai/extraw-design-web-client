@@ -12,7 +12,9 @@ import {
   FaCheckCircle,
   FaPencilRuler,
   FaHardHat,
-  FaHammer
+  FaHammer,
+  FaChartLine,
+  FaBoxOpen
 } from 'react-icons/fa';
 import { MdArchitecture } from 'react-icons/md';
 
@@ -238,6 +240,36 @@ function About() {
                   <FaHammer className="phase-icon-inner" />
                 </div>
                 <h5 className="fw-bold mb-0">Construction Stage</h5>
+              </div>
+            </div>
+            {/* Connector line - only show on desktop */}
+            <div className="d-none d-md-block flex-grow-0 flex-shrink-0" style={{width: "60px", height: "2px", background: "#e0e0e0", margin: "0 8px", alignSelf: "center"}} />
+            {/* Connector line - mobile vertical */}
+            <div className="d-block d-md-none w-100" style={{height: "30px", width: "2px", background: "#e0e0e0", margin: "0 auto"}} />
+
+            {/* Step 04 */}
+            <div className="text-center flex-fill py-3 px-2 position-relative">
+              <div className="execution-phase-card wow fadeInUp d-inline-block" data-wow-delay="0.6s">
+                <span className="step-number mb-2">Step 04</span>
+                <div className="phase-icon mb-2">
+                  <FaChartLine className="phase-icon-inner" />
+                </div>
+                <h5 className="fw-bold mb-0">Performance &amp; Monitoring</h5>
+              </div>
+            </div>
+            {/* Connector line - only show on desktop */}
+            <div className="d-none d-md-block flex-grow-0 flex-shrink-0" style={{width: "60px", height: "2px", background: "#e0e0e0", margin: "0 8px", alignSelf: "center"}} />
+            {/* Connector line - mobile vertical */}
+            <div className="d-block d-md-none w-100" style={{height: "30px", width: "2px", background: "#e0e0e0", margin: "0 auto"}} />
+
+            {/* Step 05 */}
+            <div className="text-center flex-fill py-3 px-2 position-relative">
+              <div className="execution-phase-card wow fadeInUp d-inline-block" data-wow-delay="0.75s">
+                <span className="step-number mb-2">Step 05</span>
+                <div className="phase-icon mb-2">
+                  <FaBoxOpen className="phase-icon-inner" />
+                </div>
+                <h5 className="fw-bold mb-0">Project Handover</h5>
               </div>
             </div>
           </div>

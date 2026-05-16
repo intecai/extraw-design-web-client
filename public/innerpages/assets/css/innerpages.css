@@ -1934,7 +1934,7 @@
 
 .contact-pg-style1 .tc-contact-form-style1 .form label {
   display: block;
-  font-size: 10px;
+  font-size: 13px;
   color: #000;
   text-transform: uppercase;
 }
@@ -1944,8 +1944,8 @@
   background-color: transparent;
   border-radius: 0;
   border-bottom: 1px solid #ccc;
-  padding: 10px 0;
-  font-size: 14px;
+  padding: 14px 0;
+  font-size: 16px;
 }
 
 .contact-pg-style1 .tc-contact-form-style1 .form .form-control:hover,
@@ -3437,12 +3437,12 @@
   width: 56px;
   height: 56px;
   border-radius: 50%;
-  background: linear-gradient(145deg, #7D764D 0%, #9a8f5e 100%);
+  background: linear-gradient(145deg, #1a6bbf 0%, #2d8cef 100%);
   display: flex;
   align-items: center;
   justify-content: center;
   margin: 0 auto;
-  box-shadow: 0 6px 20px rgba(125, 118, 77, 0.25);
+  box-shadow: 0 6px 20px rgba(26, 107, 191, 0.25);
   transition: transform 0.5s ease;
 }
 
@@ -3472,14 +3472,14 @@
   left: 0;
   width: 4px;
   height: 0;
-  background: linear-gradient(180deg, #7D764D, #9a8f5e);
+  background: #1a6bbf;
   transition: height 0.5s ease;
 }
 
 .category-card:hover {
   transform: translateY(-5px);
   box-shadow: 0 15px 40px rgba(0, 0, 0, 0.1);
-  border-color: rgba(125, 118, 77, 0.2);
+  border-color: rgba(26, 107, 191, 0.2);
 }
 
 .category-card:hover::before {

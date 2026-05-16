@@ -1,11 +1,12 @@
 import React from 'react';
 
-function Process() {
+function Process ()
+{
   return (
     <section className="tc-process-style2">
       <div className="container">
         <h2 className="fsz-45 fw-500 mb-80 text-center">
-          Our Approach
+          Our Approach { ' ' }
           <span className="sub-font fst-italic color-orange1 fw-400">
             process
           </span>
@@ -23,7 +24,7 @@ function Process() {
                         data-bs-toggle="collapse"
                         data-bs-target="#collapseOne"
                       >
-                        <span className="num"> 1 / </span> <h3> Survey </h3>
+                        <span className="num"> 1 / </span> <h3> Pre Construction </h3>
                       </button>
                     </div>
                     <div
@@ -50,7 +51,7 @@ function Process() {
                         data-bs-toggle="collapse"
                         data-bs-target="#collapseTwo"
                       >
-                        <span className="num"> 2 / </span> <h3> Design </h3>
+                        <span className="num"> 2 / </span> <h3> Design Conception </h3>
                       </button>
                     </div>
                     <div
@@ -77,7 +78,7 @@ function Process() {
                         data-bs-toggle="collapse"
                         data-bs-target="#collapseThree"
                       >
-                        <span className="num"> 3 / </span> <h3> Implement </h3>
+                        <span className="num"> 3 / </span> <h3> Construction Stage </h3>
                       </button>
                     </div>
                     <div
@@ -104,11 +105,38 @@ function Process() {
                         data-bs-toggle="collapse"
                         data-bs-target="#collapseFour"
                       >
-                        <span className="num"> 4 / </span> <h3> Handover </h3>
+                        <span className="num"> 4 / </span> <h3> Performance &amp; Monitoring </h3>
                       </button>
                     </div>
                     <div
                       id="collapseFour"
+                      className="accordion-collapse collapse"
+                      data-bs-parent="#accordionProcess"
+                    >
+                      <div className="accordion-body">
+                        <div className="text">
+                          After surveying and obtaining the necessary
+                          information, we will create a preliminary design
+                          including technical drawings, 3D images of the
+                          interior and provide a 3D VR experience to help
+                          customers get a visual view of their project.
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div className="accordion-item">
+                    <div className="accordion-header" id="headingFive">
+                      <button
+                        className="accordion-button collapsed"
+                        type="button"
+                        data-bs-toggle="collapse"
+                        data-bs-target="#collapseFive"
+                      >
+                        <span className="num"> 5 / </span> <h3> Project Handover </h3>
+                      </button>
+                    </div>
+                    <div
+                      id="collapseFive"
                       className="accordion-collapse collapse"
                       data-bs-parent="#accordionProcess"
                     >
@@ -143,7 +171,7 @@ function Process() {
                     alt=""
                     className="img-cover"
                   />
-                  <span className="txt sub-font"> Design </span>
+                  <span className="txt sub-font">  Design Conception</span>
                 </div>
                 <div className="img" data-lag="0.4">
                   <img
@@ -151,7 +179,7 @@ function Process() {
                     alt=""
                     className="img-cover"
                   />
-                  <span className="txt sub-font"> Handover </span>
+                  <span className="txt sub-font"> Project Handover </span>
                 </div>
                 <div className="img" data-lag="0.3">
                   <img
@@ -159,7 +187,7 @@ function Process() {
                     alt=""
                     className="img-cover"
                   />
-                  <span className="txt sub-font"> Survey </span>
+                  <span className="txt sub-font">Construction Stage  </span>
                 </div>
                 <div className="img" data-lag="0.5">
                   <img
@@ -167,7 +195,15 @@ function Process() {
                     alt=""
                     className="img-cover"
                   />
-                  <span className="txt sub-font"> Implement </span>
+                  <span className="txt sub-font"> Pre Construction </span>
+                </div>
+                <div className="img" data-lag="0.6">
+                  <img
+                    src="/home2/assets/img/process/proc5.jpg"
+                    alt=""
+                    className="img-cover"
+                  />
+                  <span className="txt sub-font"> Performance &amp; Monitoring </span>
                 </div>
               </div>
             </div>

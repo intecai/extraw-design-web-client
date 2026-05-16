@@ -1,6 +1,7 @@
 import React from 'react';
 
-function Process() {
+function Process ()
+{
   return (
     <section className="tc-process-style2">
       <div className="container">

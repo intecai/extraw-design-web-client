@@ -27,6 +27,7 @@
         border: 0;
         border-radius: 20px;
         margin-bottom: 5px;
+
         .accordion-button {
             color: #000;
             background-color: transparent;
@@ -34,10 +35,12 @@
             border-radius: 0;
             padding: 30px;
             border: 0;
+
             &:not(.collapsed) {
                 h3 {
                     color: var(--color-orange1);
                 }
+
                 &::after {
                     background-image: none;
                     content: "\f068";
@@ -45,9 +48,11 @@
                     transform: rotate(0) !important;
                 }
             }
+
             h3 {
                 font-size: 24px;
             }
+
             .num {
                 font-size: 24px;
                 color: #999;
@@ -55,6 +60,7 @@
                 margin-inline-end: 30px;
                 font-family: 'Instrument Serif', serif;
             }
+
             &::after {
                 background-image: none;
                 content: "\f067";
@@ -62,11 +68,13 @@
                 transform: rotate(0) !important;
             }
         }
+
         .accordion-body {
             padding-inline-start: 85px;
             padding-inline-end: 50px;
             padding-top: 0;
             padding-bottom: 30px;
+
             .text {
                 font-size: 15px;
                 color: #666;
@@ -80,17 +88,21 @@
         background-size: contain;
         background-repeat: no-repeat;
         background-position: center;
+
         .img {
             position: relative;
             margin: 0 auto;
+
             img {
                 border-radius: 50%;
             }
+
             &:nth-of-type(1) {
                 width: 360px;
                 height: 360px;
                 border-radius: 50%;
                 transform: translateX(50px);
+
                 .txt {
                     font-size: 35px;
                     position: absolute;
@@ -104,6 +116,7 @@
                     text-transform: capitalize;
                 }
             }
+
             &:nth-of-type(2) {
                 position: absolute;
                 right: -100px;
@@ -111,6 +124,7 @@
                 width: 160px;
                 height: 160px;
                 border-radius: 50%;
+
                 &::after {
                     position: absolute;
                     content: "";
@@ -118,9 +132,10 @@
                     bottom: 0;
                     width: 100%;
                     height: 100%;
-                    background-image: linear-gradient(to top, #000000c5 , transparent);
+                    background-image: linear-gradient(to top, #000000c5, transparent);
                     border-radius: 50%;
                 }
+
                 .txt {
                     font-size: 25px;
                     position: absolute;
@@ -131,6 +146,7 @@
                     text-transform: capitalize;
                 }
             }
+
             &:nth-of-type(3) {
                 position: absolute;
                 left: 70px;
@@ -138,6 +154,7 @@
                 width: 220px;
                 height: 220px;
                 border-radius: 50%;
+
                 &::after {
                     position: absolute;
                     content: "";
@@ -145,9 +162,10 @@
                     bottom: 0;
                     width: 100%;
                     height: 100%;
-                    background-image: linear-gradient(to top, #000000c5 , transparent);
+                    background-image: linear-gradient(to top, #000000c5, transparent);
                     border-radius: 50%;
                 }
+
                 .txt {
                     font-size: 30px;
                     position: absolute;
@@ -159,12 +177,14 @@
                     text-transform: capitalize;
                 }
             }
+
             &:nth-of-type(4) {
                 width: 240px;
                 height: 240px;
                 border-radius: 50%;
                 margin-top: 40px;
                 transform: translateX(100%);
+
                 .txt {
                     font-size: 30px;
                     position: absolute;
@@ -178,18 +198,53 @@
                     text-transform: capitalize;
                 }
             }
+
+            &:nth-of-type(5) {
+                position: absolute;
+                right: 300px;
+                bottom: -40px;
+                width: 200px;
+                height: 200px;
+                border-radius: 50%;
+
+                &::after {
+                    position: absolute;
+                    content: "";
+                    left: 0;
+                    bottom: 0;
+                    width: 100%;
+                    height: 100%;
+                    background-image: linear-gradient(to top, #000000c5, transparent);
+                    border-radius: 50%;
+                }
+
+                .txt {
+                    font-size: 20px;
+                    position: absolute;
+                    bottom: 15px;
+                    right: 50%;
+                    transform: translateX(50%);
+                    z-index: 10;
+                    color: #fff;
+                    text-transform: capitalize;
+                    text-align: center;
+                    width: 100%;
+                }
+            }
         }
     }
- 
+
 }
 
 @media screen and (max-width: 991px) {
     .tc-process-style2 {
         padding: 80px 0;
+
         .imgs {
             margin-top: 50px;
             display: flex;
             flex-wrap: wrap;
+
             .img {
                 width: 48% !important;
                 height: 250px !important;
@@ -201,6 +256,7 @@
                 right: 0 !important;
                 bottom: 0 !important;
                 transform: translate(0) !important;
+
                 &::after {
                     position: absolute;
                     content: "";
@@ -208,12 +264,14 @@
                     bottom: 0;
                     width: 100%;
                     height: 100%;
-                    background-image: linear-gradient(to top, #000000c5 , transparent);
+                    background-image: linear-gradient(to top, #000000c5, transparent);
                     border-radius: 30px !important;
                 }
+
                 img {
                     border-radius: 30px !important;
                 }
+
                 .txt {
                     font-size: 30px !important;
                     position: absolute !important;
